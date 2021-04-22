@@ -1,5 +1,9 @@
 #!/bin/bash
 
+
+echo "**** Generating rsa keys ****"
+su -c "ssh-keygen -t rsa -f /home/cpd2021/.ssh/id_rsa -q -P ''" -m cpd2021
+
 echo "**** STARTING SSH SERVICE ****"
 
 service ssh start
